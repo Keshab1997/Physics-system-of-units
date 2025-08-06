@@ -41,7 +41,7 @@ function initApp(user) {
     setupUIInteractions();
     
     // --- Firebase থেকে অধ্যায়-ভিত্তিক ডেটা লোড ---
-    loadChapterLeaderboard(db, chapterKey); // অধ্যায়-ভিত্তিক লিডারবোর্ড
+    loadChapterLeaderboard(db, chapterKey, user); // অধ্যায়-ভিত্তিক লিডারবোর্ড
     loadDashboardData(db, user.uid, chapterKey); // অধ্যায়-ভিত্তিক ড্যাশবোর্ড
 }
 
